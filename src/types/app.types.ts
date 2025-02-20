@@ -92,6 +92,7 @@ export type ChannelItemView = {
     display_name: string;
     description: string;
     icon_url: string;
+    banner_url: string;
     subscribe_count: number;
     post_count: number;
     created_at: string;
