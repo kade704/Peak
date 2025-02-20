@@ -23,7 +23,7 @@ const AuthSubscriber = () => {
         return () => {
             data?.subscription.unsubscribe();
         };
-    }, [setProfile]);
+    }, [setProfile, supabaseBrowser]);
 
     return null;
 };

@@ -10,22 +10,11 @@ export type PostBannerItemProps = {
     thumbnail_url: string;
     channel_id: string;
     category: string;
-    visit_count: number;
-    comment_count: number;
     created_at: string;
     author_username: string;
 };
 
-const PostBannerItem = ({
-    id,
-    title,
-    thumbnail_url,
-    channel_id,
-    visit_count,
-    comment_count,
-    author_username,
-    created_at,
-}: PostBannerItemProps) => {
+const PostBannerItem = ({ id, title, thumbnail_url, channel_id, author_username, created_at }: PostBannerItemProps) => {
     return (
         <Link href={`/b/${channel_id}/${id}`} className="relative w-[280px] h-[210px] flex flex-col">
             <div className="relative w-full h-[120px] rounded-lg bg-base-300 overflow-hidden">

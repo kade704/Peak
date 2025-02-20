@@ -8,7 +8,7 @@ const ThemeSubscriber = () => {
 
     useLayoutEffect(() => {
         initTheme();
-    }, []);
+    }, [initTheme]);
 
     return null;
 };

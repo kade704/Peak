@@ -20,7 +20,7 @@ const SearchPage = async ({ searchParams }: { searchParams: Promise<{ q: string 
 
     return (
         <div className="mt-10 w-[768px]">
-            <h1 className="text-3xl font-bold">"{query}" 검색 결과</h1>
+            <h1 className="text-3xl font-bold">&ldquo;{query}&rdquo; 검색 결과</h1>
             <div className="h-4" />
             <PostMainList posts={posts} />
             <div className="h-4" />

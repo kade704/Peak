@@ -4,7 +4,7 @@ import { Controller, useForm } from "react-hook-form";
 import { createPost } from "@/actions/posts";
 import PostContentEditor from "./PostContentEditor";
 import { redirect } from "next/navigation";
-import { addImage, addImageFromData } from "@/actions/assets";
+import { addImageFromData } from "@/actions/assets";
 
 type FormData = {
     title: string;
