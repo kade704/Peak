@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import AuthSubscriber from "components/Auth/AuthSubscriber";
 import ThemeSubscriber from "@/components/ThemeSubscriber";
+import NextTopLoader from "nextjs-toploader";
 
 const pretendard = localFont({
     src: "./pretendard.woff2",
@@ -27,6 +28,7 @@ export default function RootLayout({
     return (
         <html lang="kr">
             <body className={`${pretendard.variable} font-pretendard bg-base-200 min-h-screen overflow-x-hidden`}>
+                <NextTopLoader color="oklch(var(--p))" />
                 <AuthSubscriber />
                 <ThemeSubscriber />
                 {children}
